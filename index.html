@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#include &#60;girls&#62;</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"> </script>
+    <script src="https://use.fontawesome.com/75b9bc8624.js"></script>
+    <script src="https://kit.fontawesome.com/8fd150d34d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link rel="icon" href="imagens/include.png">
+</head>
+
+<body>
+
+    <header>
+        <!--Seção de cabeçalho-->
+        <div class="cabecalho">
+            <img id="imageLogo" src="imagens/logos/includeLogo.png" alt="Logo Include Girls" height="150" width="100">
+            <h2>&#35;include &#60;girls&#62;</h2>
+        </div>
+    </header>
+
+    <nav>
+        <!--Seção correspondente á barra de navegação-->
+        <div>
+            <ul>
+                <!--lista contento os botões de cada elemento da barra de navegação e seus respectivos atributos de dado personalizados: 'data-tabname'-->
+                <li><button data-tabname="home">HOME</button></li>
+                <li><button data-tabname="sobre">SOBRE</button></li>
+                <li><button data-tabname="equipe">EQUIPE</button></li>
+                <li><button data-tabname="eventos">EVENTOS</button></li>
+                <li><button data-tabname="projetos">PROJETOS</button></li>
+                <li><button data-tabname="publicacoes">PUBLICAÇÕES</button></li>
+                <li><button data-tabname="material">MATERIAL</button></li>
+                <li><button data-tabname="contato">CONTATO</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="tabs">
+            <!--section que faz uso da classe 'tabs'-->
+
+            <!--cada section apresentará um nome de identificação, por meio do atributo 'data-tabname', com o respectivo nome do botão vinculado á aba-->
+            <section data-tabname="home">
+                <!--section home-->
+
+                <h2 class="tabs">Home</h2>
+                <br><br>
+                <div class="carousel">
+                    <div><img src="imagens/home/staMonica.jpg" alt="Campus Santa Mônica"></div>
+                    <div><img src="imagens/home/mteCarmelo.jpg" alt="Campus Monte Carmelo"></div>
+                </div>
+
+                <h4 class="frase"><i>Por mais mulheres na computação!</i></h4>
+
+                <br><br>
+                <h2 style="text-decoration:underline">Notícias</h2><br>
+                <ul>
+                    <li>
+                        <h3>II Meninas na Computação na TechWeek 2022 - Novembro, 2022</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/home/techWeekLogo.png" alt="Logo Tech Week">
+                                <p>A segunda edição do evento Meninas na Computação foi realizada em conjunto com a
+                                    <a href="https://techweek.facom.ufu.br/2022" target="_blank"> FACOM TechWeek</a>.</p>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Projeto de extensão aprovado para apoiar o ensino de pensamento computacional - Outubro, 2022</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/logos/PROEXUFULogo.png" alt="Logo CSBC">
+                                <p>Para despertar o interesse de meninas estudantes do ensino médio em Computação, o projeto tem
+                                como objeto a realização de palestras e um minicurso de Introdução ao Pensamento Computacional, voltado 
+                                para meninas do 1º ano do ensino médio de uma escola pública de Uberlândia-MG. Esse projeto contará com o 
+                                apoio do <a href="https://www.petsi.facom.ufu.br/" target="_blank">PET-SI</a> e <a href="https://facom.ufu.br/pet/comppet" 
+                                target="_blank">PET-BCC</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Pôster apresentado no WIT 2022 - Agosto, 2022</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/home/csbcLogo.png" alt="Logo CSBC">
+                                <p>Apresentação do <a href="https://csbc.sbc.org.br/2022/wit/" target="_blank">pôster</a>
+                                    "Relato de experiência da criação do grupo &#35;include &#60;girls&#62;: onde estamos agora
+                                    e o que vem a seguir" no Women in Information Technology (WIT), evento integrante do 42º
+                                    Congresso da Sociedade Brasileira de Computação (<a href="https://csbc.sbc.org.br/2022/" target="_blank">CSBC 2022</a>)
+                                    realizado em Niterói (RJ).</p>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Projeto de ensino aprovado para apoiar o grupo &#35;include &#60;girls&#62; - Junho, 2022</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/home/progradLogo.png" alt="Logo Prograd">
+                                <p>O Projeto de Ensino "Incluindo Meninas na Computação: mentoria e rede de apoio para alunas
+                                    da graduação" foi aprovado no Edital PROGRAD 07/2022 do
+                                    <a href="http://www.prograd.ufu.br/pbg" target="_blank">Programa de Bolsas de Graduação</a>.
+                                    Esse projeto de ensino está inserido no subprograma InclUFU e contará com o apoio de uma
+                                    aluna bolsista e uma aluna colaboradora na sua realização.
+                                </p>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Parceria com o Programa Meninas Digitais (SBC) - Março, 2022</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/logos/meninasDigitaisLogo.png" alt="Logo Meninas Digitais">
+                                <p>Inclusão oficial do grupo &#35;include &#60;girls&#62; como projeto parceiro do <a
+                                        href="https://meninas.sbc.org.br/" target="_blank">Programa Meninas Digitais</a> da <a
+                                        href="https://www.sbc.org.br/" target="_blank">Sociedade Brasileira de Computação</a>.</p>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>I Meninas na Computação na TechWeek 2021 - Dezembro, 2021</h3>
+                            <div class="container">
+                                <img id="imageNoticias" src="imagens/home/techWeekLogo.png" alt="Logo Tech Week">
+                                <p>O Meninas na Computação foi a primeira edição de um evento acadêmico que buscou incentivar o
+                                    ingresso de meninas e mulheres em carreiras e cursos nas áreas de Computação e Tecnologia da 
+                                    Informação. Esse evento foi realizado em conjunto com a <a href="http://www.techweek.facom.ufu.br/meninas-na-computacao-2021"
+                                    target="_blank">FACOM TechWeek</a>.</p>
+                            </div>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section data-tabname="sobre">
+                <h2 class="tabs">Sobre</h2><br>
+                O projeto busca desenvolver ações tanto para incentivar o ingresso de mulheres em cursos nas
+                áreas de Computação e Tecnologia da Informação, quanto para apoiar as alunas durante a realização
+                de seus cursos.
+                <br><br>Dentre os objetivos específicos do projeto estão:<br>
+                <ul>
+                    <li>Promover atividades que incentivem as estudantes do ensino médio público de Uberlândia e região
+                        a ingressarem em cursos das áreas de Computação e Tecnologia da Informação;<br><br></li>
+                    <li>Fomentar discussões a respeito das diversas áreas de atuação,
+                        dos desafios e das oportunidades para mulheres na área de TI por meio de redes sociais e da
+                        realização
+                        de eventos;<br><br></li>
+                    <li>Apoiar as discentes dos cursos da FACOM/UFU por meio de monitorias e tutorias.<br><br></li>
+                </ul>
+            </section>
+
+            <section data-tabname="equipe">
+                <h2 class="tabs">Equipe</h2><br>
+                <h2 style="text-decoration: underline;">Membros Atuais</h2><br>
+
+                <div>
+                    <ul>
+                        <li>
+                            <h3>Professoras:</h3><br>
+                        </li>
+                    </ul>
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoAlessandra.jpg" alt="Foto de Perfil Alessandra Aparecida"><br></p>
+                                <p><strong>Alessandra Aparecida Paulino</strong> <br> alessandra@ufu.br</p>
+                            </td>
+                            <td>
+                                <br>
+                                <p><img class="team-img" src="imagens/equipe/fotoElaine.jpg" alt="Foto de Perfil Elaine Ribeiro"><br></p>
+                                <br><p><strong>Elaine Ribeiro de Faria Paiva</strong> <br> elaine@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoFabiola.png" alt="Foto de Perfil Fabíola Pereira"><br></p>
+                                <p><strong>Fabíola Souza Fernandes Pereira</strong> <br> fabiola.pereira@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoGina.jpg" alt="Foto de Perfil Gina Maira"><br></p>
+                                <p><strong>Gina Maira Barbosa de Oliveira</strong> <br> gina@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoMariaAdriana.jpg" alt="Foto de Perfil Maria Adriana"><br></p>
+                                <p><strong>Maria Adriana Vidigal de Lima</strong> <br> maria.adriana@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img  class="team-img" src="imagens/equipe/FotoCamila.jpg" alt="Foto de Perfil Maria Camila"><br></p>
+                                <p><strong>Maria Camila Nardini Barioni</strong> <br> camila.barioni@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoMirella.jpg" alt="Foto de Perfil Mirella Silva"><br></p>
+                                <p><strong>Mirella Silva Junqueira</strong> <br> mirella@ufu.br</p>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div>
+                    <br><ul>
+                        <li>
+                            <h3>Bolsistas e Voluntários:</h3><br>
+                        </li>
+                    </ul>
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoAnaConti.jpeg" alt="Foto de Perfil Ana Barbara"><br></p>
+                                <p><strong>Ana Barbara Campos Conti</strong> <br> ana.conti@ufu.br</p>
+                            </td>
+                        
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoAnaJulia.jpeg" alt="Foto de Perfil Ana Julia"><br></p>
+                                <p><strong>Ana Julia Alves Ferreira Silverio</strong> <br> ana.silverio1@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoAnaRoling.png" alt="Foto de Perfil Ana Roling"><br></p>
+                                <p><strong>Ana Roling Silvério</strong> <br> ana.roling@ufu.br</p>
+                            </td>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoAnnaLetycia.jpg" alt="Foto de Perfil Anna Letycia"><br></p>
+                                <p><strong>Anna Letycia Fernandes Reis</strong> <br> anna.fernandes@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoGabrielAmaral.jpeg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Gabriel Cardoso Brandão de Sousa Amaral</strong> <br> gabriel.amaral@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoGabrielCouto.jpeg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Gabriel Couto de Freitas</strong> <br> gabrielcouto1@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoGiullia.jpeg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Giullia Rodrigues de Menezes</strong> <br> giullia.rodrigues@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoIsadora.png" alt="Foto de Perfil"><br></p>
+                                <p><strong>Isadora dos Reis Gonçalves</strong> <br> isadora.reis@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/fotoJhully.jpg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Jhully Vitoria Nunes Leite</strong> <br> jhully.leite@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoLauraMoreira.jpeg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Laura de Barros Moreira</strong> <br> laura.moreira1@ufu.br</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoMarina.jpeg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Marina Bagliano Silva</strong> <br> marina.bagliano@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoMurielly.jpg" alt="Foto de Perfil Murielly" height="200"
+                                        width="150"><br></p>
+                                <p><strong>Murielly Oliveira Nascimento</strong> <br> murielly.nascimento@ufu.br</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br><h2 style="text-decoration: underline;">Membros Anteriores</h2><br>
+
+                <div>
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:60%">
+                                <p><img class="team-img" src="imagens/equipe/perfil.png" alt="Foto de Perfil"><br></p>
+                                <p><strong>Maria Eugenia de Avila Ferreira</strong> <br> maria.eugenia@ufu.br</p>
+                            </td>
+                            <td>
+                                <p><img class="team-img" src="imagens/equipe/fotoNayara.jpg" alt="Foto de Perfil"><br></p>
+                                <p><strong>Nayara Terezinha Nunes</strong> <br> mnayaratnunes@ufu.br</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </section>
+
+            <section data-tabname="eventos">
+                <h2 class="tabs">Eventos</h2>
+                <br><ul>
+                    <li>
+                        <h3>II Meninas na Computação (Novembro, 2022)</h3><br><br>
+                        <div class="container">
+                            <div>
+                                <ol>
+                                    A programação da segunda edição do evento Meninas na Computação contou com a realização de
+                                    três atividades acadêmicas e científicas:<br>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=4SbkhhM9k3s" target="_blank">Palestra</a> sobre Desafios das mulheres na academia e no mercado de trabalho: forças “invisíveis” que influenciam 
+                                        a representatividade, com 
+                                        <a href="https://pesquisadores.uff.br/researcher/karin-da-costa-calaza" target="_blank">Karin da Costa Calaza</a>
+                                        (Professora Titular da Universidade Federal Fluminense – UFF). 
+                                        <button type="button" id="btnOpenModal"> RESUMO </button>
+                                    </li>
+                                    <li>
+                                        Minicurso para alunas do ensino médio de escolas públicas de Uberlândia e região.
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=wyvdKhb2qnQ" target="_blank">Painel</a> sobre Mulheres na Computação (passado, presente e futuro), com
+                                        as convidadas <a href="https://br.linkedin.com/in/zaima-milazzo" target="_blank">Zaima Milazzo</a> (Diretora de Inovação da Algar
+                                        Telecom e Presidente do Brain, Centro de Inovação em Negócios Digitais fundado pela Algar Telecom), 
+                                        <a href="https://br.linkedin.com/in/mariangela-gomes-setti-a5779822" target="_blank">Mariângela Gomes Setti</a> (Professora Titular 
+                                        da Universidade Tecnológica Federal do Paraná – UTFPR), e <a href="https://br.linkedin.com/in/raquel-fialho-lafet%C3%A1-ph-d-6a3ab024" 
+                                        target="_blank">Raquel Fialho Lafetá</a> (Gerente de Engenharia da Zé Delivery – Ambev e ex-aluna da FACOM).
+                                    </li>
+                                    O evento foi aberto para a comunidade externa à Universidade, especialmente alunas do ensino médio de escolas públicas
+                                    de Uberlândia e região. Esse evento foi realizado em conjunto com a <a href="https://techweek.facom.ufu.br/2022" target="_blank">
+                                    FACOM TechWeek</a>, evento anual organizado pela Faculdade de Computação da UFU, em formato totalmente online/remoto.
+                                </ol>
+                            </div>
+                            <p>        </p>
+                            <div>
+                                <img id="fotoEvento" src="imagens/eventos/Painel3.png" alt="painel II Meninas na Computação">
+                            </div>
+                        </li><br><br>
+
+                        <li>
+                            <h3>I Meninas na Computação (Dezembro, 2021)</h3><br>
+                            <div class="container">
+                                <img id="fotoEvento" src="imagens/eventos/fotoEvento1.png" alt="painel I Meninas na Computação" align="left">
+                                <p>O Meninas na Computação foi a primeira edição de um evento acadêmico que buscou incentivar o
+                                    ingresso
+                                    de meninas e mulheres em carreiras e cursos nas áreas de Computação e Tecnologia da
+                                    Informação, principalmente
+                                    em Uberlândia, por meio de duas atividades acadêmicas e científicas: um minicurso e um <a
+                                        href="https://www.youtube.com/watch?v=hXkW8r002jk&t=1672s" target="_blank">painel</a>. O
+                                    evento foi aberto para a comunidade externa à Universidade, especialmente alunas
+                                    do ensino médio de escolas públicas de Uberlândia. Esse evento foi realizado em conjunto com
+                                    a <a href="http://www.techweek.facom.ufu.br/meninas-na-computacao-2021" target="_blank">FACOM TechWeek</a>, 
+                                    evento anual organizado pela Faculdade de Computação da UFU, em formato totalmente online/remoto.</p>
+                        </div>
+                    </li>
+                </ul><br><br><br>
+            </section>
+
+            <section data-tabname="projetos">
+                <h2 class="tabs">Projetos</h2><br>
+                <ul>
+                    <li>
+                        <h3>Projeto de ensino "Incluindo Meninas na Computação: mentoria e rede de apoio para alunas da
+                            graduação"</h3>
+                        <p><strong>Apoio:</strong> Edital PROGRAD 07/2022 do Programa de Bolsas de Graduação<br>
+                            <strong>Vigência:</strong> Julho/2022 - Dezembro/2022<br>
+                            <strong>Descrição:</strong>
+                            Com o intuito de contribuir para a melhoria do desempenho acadêmico e a permanência das
+                            alunas ingressantes dos cursos da FACOM, pretende-se explorar, dentro do contexto deste
+                            projeto, a elaboração e o desenvolvimento de atividades de mentoria. A proposta é que duas
+                            alunas veteranas (uma aluna bolsista e uma aluna colaboradora) dos cursos da FACOM/UFU
+                            (alunas mentoras), Campus Santa Mônica, sejam selecionadas para apoiar as alunas
+                            ingressantes (alunas mentoradas), dos cursos BCC e BSI, no contexto das disciplinas de
+                            introdução à programação. De maneira geral, as atividades de mentoria planejadas deverão
+                            envolver tanto a divulgação científica para destacar o papel das mulheres na Computação,
+                            quanto a capacitação tecnológica por meio da realização de grupo de estudos sobre
+                            programação.
+                            <br><strong>Coordenação:</strong> Profa. Maria Camila Nardini Barioni
+                            <br><strong>Alunas envolvidas:</strong> Anna Letycia Fernandes Reis (bolsista) e Isadora dos
+                            Reis Gonçalves (colaboradora)
+                        </p>
+                    </li>
+                </ul><br>
+                <ul><br>
+                    <li>
+                        <h3>Projeto de extensão "SIE 26896 - Introdução ao Pensamento Computacional para Meninas do
+                            Ensino Médio"</h3>
+                        <p><strong>Vigência:</strong> 08/10/2022 a 20/01/2023<br>
+                            <strong>Descrição:</strong>
+                            O projeto tem como objetivo principal fortalecer a participação feminina nos cursos de
+                            Computação da Universidade
+                            Federal de Uberlândia, visando o equilíbrio e a diversidade de gênero nos cursos de Ciência
+                            da Computação e Sistemas de
+                            Informação. Para despertar o interesse de meninas estudantes do ensino médio em Computação,
+                            a presente proposta tem como
+                            objeto a realização de palestras e um minicurso de Introdução ao Pensamento Computacional,
+                            voltado para meninas do 1º ano
+                            do ensino médio de uma escola pública de Uberlândia-MG. O minicurso terá
+                            duração de 12h e acontecerá aos sábados nas dependências da própria escola, e duas palestras
+                            estão previstas. O tema do
+                            Pensamento Computacional será abordado de forma desplugada (sem necessidade de uso de
+                            computador) e serão propostas
+                            atividades com o objetivo de ensinar os fundamentos da Ciência da Computação. As
+                            atividades estão estruturadas em: (i) Representação de Informações: formas utilizadas pelos
+                            computadores para a
+                            representação de dados (números binários, texto e imagens) e compressão de dados; e (ii)
+                            Algoritmos: métodos
+                            computacionais de uso frequente no cotidiano, tais como ordenação e busca de informação. As
+                            ações devem contar com a
+                            participação de estudantes femininas dos cursos de Ciência da Computação e Sistemas de
+                            Informação da UFU, visando
+                            reforçar a autoestima das alunas e promover a socialização de conhecimento e experiências.
+                            Como forma de
+                            avaliar a participação das alunas do ensino médio, pretende-se a adoção de um questionário
+                            ao final do minicurso,
+                            possibilitando análises quantitativas e qualitativas relacionadas ao projeto. Estão
+                            previstas 20 vagas para meninas,
+                            porém, caso não sejam preenchidas, poderão ser destinadas aos meninos interessados.
+                            <br><strong>Coordenação Geral:</strong> Maria Adriana Vidigal de Lima
+                            <br><strong>Coordenação:</strong> Alessandra Aparecida Paulino, Elaine Ribeiro de Faria
+                            Paiva, Fabíola Souza Fernandes Pereira,
+                            Gina Maira Barbosa de Oliveira, Maria Camila Nardini Barioni e Mirella Silva Junqueira
+                            <br><strong>Alunas:</strong> Ana Barbara Conti, Ana Julia Alves Ferreira Silverio, Gabriel
+                            Cardoso Brandão de Souza Amaral,
+                            Jhully Vitoria Nunes Leite, Laura de Barros Moreira
+                        </p>
+                    </li>
+                </ul><br>
+            </section>
+
+            <section data-tabname="publicacoes">
+                <h2 class="tabs">Publicações & Pôsteres</h2><br>
+                <h2 class="publicationYear">2022</h2>
+                <p class="publication">
+                    <strong>Relato de experiência da criação do grupo &#35;include &#60;girls&#62;: onde estamos agora e
+                        o que vem a seguir</strong>, <br>
+                    <em>In: WOMEN IN INFORMATION TECHNOLOGY (WIT), 2022, Niterói. Anais [...]. Porto Alegre: Sociedade
+                        Brasileira de Computação, 2022. p. 245-250. ISSN 2763-8626.</em>,<br>
+                    (BARIONI, Maria Camila N.; FARIA, Elaine R.; LIMA, Maria Adriana V.; OLIVEIRA, Gina M. B.; PEREIRA,
+                    Fabíola S. F.; PAULINO, Alessandra A.;
+                    JUNQUEIRA, Mirella S.) <br><br>
+                    <img id="fotoPoster" src="imagens/publicacoes/posterMini.png" alt="Miniatura do postêr"
+                        align="right" width="200" height="250">
+                    Pôster: <a href="publicacoes/PosterWIT2022.pdf" target="_blank">[PDF]</a><br>
+                    DOI: <a href="https://doi.org/10.5753/wit.2022.222849"
+                        target="_blank">https://doi.org/10.5753/wit.2022.222849</a><br>
+                </p>
+            </section>
+
+            <section data-tabname="material">
+                <h2 class="tabs">Material</h2>
+                <br><br><br><p><i>Em breve...</i></p><br><br><br><br>
+            </section>
+
+            <section data-tabname="contato">
+                <h2 class="tabs">Contato</h2><br>
+                <p>Para mais informações, entrar em contato através das nossas redes:</p>
+                <ul>
+                    <br><li>E-mail: <span><a
+                                href="mailto:includegirls@facom.ufu.br">includegirls@facom.ufu.br</a></span><br></li>
+                    <br><li>Instagram: <span><a
+                                href="https://instagram.com/includegirls.ufu" target="_blank">https://instagram.com/includegirls.ufu</a></span><br>
+                    </li>
+                    <br><li>Facebook: <span><a
+                                href="https://www.facebook.com/includegirls.ufu" target="_blank">https://www.facebook.com/includegirls.ufu</a></span><br>
+                    </li>
+                </ul><br>
+            </section><br>
+
+        </section>
+
+    </main>
+
+    <div id="modalTeste" class="modal">
+        <!--div correspondente à janela modal, por isso a declaração da classe 'modal', a qual possibilita o escurecimento da página que ficará ao fundo-->
+    
+        <div class="modalContent">
+            <!--div que faz uso da classe modalContent, que indica qual conteúdo será exibido na janela modal-->
+            <h2>Resumo</h2>
+            <p>A neurociência tem demonstrado que grande parte do processamento cerebral ocorre de forma não consciente. O viés
+            implícito é um fenômeno natural no qual o encéfalo forma constantemente associações automáticas de modo a gerar
+            respostas rápidas frente as diferentes situações. O viés implícito que envolve tanto avaliações favoráveis quanto
+            desfavoráveis é ativado involuntariamente e sem consciência ou controle intencional do indivíduo (Blair, 2002; Rudman,
+            2004). Portanto, várias pistas do ambiente podem implicitamente afetar nosso comportamento, e em última instância nossas
+            avaliações, comportamentos e decisões. Assim, como as pessoas não têm acesso consciente para determinar seu viés de
+            acordo com suas convicções pessoais, este viés pode ocorrer mesmo que a pessoa esteja convencida de que nunca se
+            comportaria de modo diferente de suas convicções. Estas associações implícitas que nosso encéfalo faz, podem nos fazer
+            sentir e tomar atitudes em relação a outras pessoas baseadas em características como raça, etnia, gênero, idade e
+            aparência, mesmo que a princípio não concordemos conscientemente com elas. Apesar de as mulheres já perfazerem 60% dos
+            formandos nas universidades do Brasil, a distribuição nos cursos de diferentes áreas é significativamente desigual. Além
+            disso, as mulheres e pessoas negras ainda se encontram sub-representadas em posições de gestão e liderança, tanto na
+            academia quanto na política e no mercado de trabalho. Existem várias razões que poderiam explicar esse fenômeno,
+            abordaremos mais especificamente dados da área da neurociência sobre o funcionamento do cérebro e viés implícito.</p>
+            <!--Conteúdo da janela modal-->
+            <button class="buttonClose">Close</button>
+            <!--Botão da classe 'buttonClose' que estará presente na janela modal e que por meio do JS irá fechá-la-->
+        </div>
+    
+    </div>
+    
+
+    <script>
+        window.onload = function () { //função anônima em que o evento load ocorre quando a página inteira for carregada
+            buttons = document.querySelectorAll("nav button"); //seleciona todos os botões que aparecerem dentro da barra de navegação
+            for (let button of buttons) { //laço que percorrerá todos os botões selecionados previamente
+                button.onclick = () => openTab(button.dataset.tabname); //associa o evento 'click' de cada botão á chamada da função openTab, passando como argumento o valor do atributo personalizado criado, ou seja, o nome de identificação de cada botão
+            }
+
+            openTab("home") //indica qual section será apresentada assim que a página for carregada, nesse caso é a 'filmes'
+            flexslider(flexslider)
+            animation: "slide";
+        }
+        $('.carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            centerMode: true,
+        });
+
+        function openTab(tabName) { //função openTab que possui como argumento o nome da aba indicada
+
+            //oculta a tab exibida atualmente
+            const lastTabActive = document.querySelector(".tabActive"); //busca a seção que está atualmente visível pela classe "tabActive"
+            if (lastTabActive !== null) //verifica se o valor é diferente de nulo
+                lastTabActive.className = ""; //remove a classe 'tabActive' deste elemento section, deixando de ser visível na página
+
+            //torna o botão que está ativo em não-ativo
+            const lastButtonActive = document.querySelector(".buttonActive"); //busca o botão que está atualmente ativo pela classe "buttonActive"
+            if (lastButtonActive !== null) //verifica se o valor é diferente de nulo
+                lastButtonActive.className = ""; //remove a classe 'buttonActive' deste elemento, fazendo com que o botão deixe de estar ativo na página
+
+            //seleção de qual section e qual button se tornarão ativos, feita pela string CSS com seletor de atributo
+            const query1 = ".tabs > section[data-tabname='" + tabName + "']"; //seleciona o elemento section que tem o atributo 'data-tabname' igual ao valor passado como argumento da função
+            const query2 = "nav button[data-tabname='" + tabName + "']"; //seleciona o elemento referente ao botão que tem o atributo 'data-tabname' igual ao valor passado como argumento da função
+
+            //ativação da nova aba e do novo botão selecionados
+            document.querySelector(query1).className = "tabActive"; //acessa-se a propriedade className do elemento escolhido e indica seu novo valor como 'tabActive', tornando a seção visível
+            document.querySelector(query2).className = "buttonActive"; //acessa-se a propriedade className do elemento escolhido e indica seu novo valor como 'buttonActive', tornando o botão visível
+        
+            const modal = document.querySelector(".modal"); //seleciona o objeto correspondente ao div de classe 'modal'
+            const buttonClose = modal.querySelector(".buttonClose"); //seleciona o elemento correspondente ao botão de fechar o modal, pela classe 'buttonClose', que está dentro da própria janela do modal
+
+            buttonClose.addEventListener("click", function () { //função anônima que será executada quando o botão de fechar da classe modal for acionado com um click
+                modal.style.display = 'none'; //alteração da propriedade display do objeto referente a div do modal para none, a fim de que o modal não seja mais apresentado na tela, ou seja, fechando a janela modal
+            });
+
+            const buttonOpenModal = document.getElementById("btnOpenModal"); //seleciona o elemente referente ao botão de abrir o modal, pelo id 'btnOpenModal', presente na página principal
+            buttonOpenModal.addEventListener("click", function () { //função anônima que será executada ao click do botão de abrir o modal
+                modal.style.display = 'block' //alteração da propriedade display do objeto referente a div do modal para block, tornando o elemento visível, ou seja, abrindo a janela modal
+            })
+        
+        }
+
+
+    </script>
+    <br><br>
+
+    <footer>
+
+        <!--section Redes Sociais-->
+        <div class="redes">
+            <br>
+            <a href="https://instagram.com/includegirls.ufu" target="_blank">
+                <i class="fa-brands fa-instagram fa-2xl"></i></a>
+
+            <a href="https://www.facebook.com/includegirls.ufu" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl"></i></a>
+
+        </div>
+
+        <div class="logos">
+            <table align="center">
+                <tr>
+                    <td>
+                        <p><img src="imagens/logos/meninasDigitaisLogo.png" alt="Logo Meninas Digitais" height="120"
+                                width="250"></p>
+                    </td>
+                    <td>
+                        <p><img src="imagens/logos/ufuLogo.png" alt="Logo UFU" height="50" width="200"></p>
+                    </td>
+                    <td>
+                        <p><img src="imagens/logos/facomLogo.png" alt="Logo FACOM" height="90" width="250"></p>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <p style="text-align: center;">&copy; 2022 Include Girls</p>
+            <div class="atualizacao">Última atualização: 02/12/2022</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

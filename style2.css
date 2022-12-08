@@ -1,0 +1,201 @@
+header {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    background: #e8c4e3;
+}
+
+/*Estilização da barra de navegação*/
+nav ul {
+    padding: 10px 0;
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+/*Código CSS dos itens contidos na lista da barra de navegação*/
+nav li {
+    text-align: center;
+    font-family: verdana, Helvetica, sans-serif;
+
+    display: inline;
+    margin: 20px, 40px;
+    padding: 20px 30px;
+}
+
+nav button {
+    border: none;
+    padding: 0 10px;
+    background-color: inherit;
+    height: 30px;
+}
+
+/*Código CSS referente às características dos botões quando o mouse passa sobre ele*/
+nav button:hover {
+    color: rgb(208, 116, 199);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Classe específica para o botão utilizada quando o usuário clica no botão*/
+button.buttonActive {
+    font-weight: bold;
+    color: rgb(215, 26, 196);
+}
+
+/*Classe que oculta todos os elementos 'section' que estão dentro de um elemento que utiliza a classe 'tab'*/
+.tabs section {
+    display: none;
+}
+
+/*Classe utilizada para os elementos 'section' para torná-los visíveis e para que façam parte do layout*/
+section.tabActive {
+    display: block;
+    
+}
+
+main {
+    padding: 0 5%;
+    margin-top: 8em;
+    border: 5px;
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+
+    border: 3px solid rgb(246, 202, 241);
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4.frase{
+    text-align: center;
+    color: rgb(215, 26, 196);
+}
+
+p{
+    padding: 6px 20px;
+    border-top: none;
+    overflow: auto;
+    text-align: justify;
+}
+
+footer{
+    height: auto;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    background: #e8c4e3;
+    display: flex;
+    flex-direction: column;
+}
+
+div.atualizacao {
+    line-height: 107%;
+    font-size: 10.0pt;
+    font-family: "Calibri", sans-serif;
+}
+
+h2.tabs{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(215, 26, 196);
+    text-align: center;
+}
+
+.carousel div img{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+}
+
+@media (max-width: 1100px){
+    body{
+        
+    }
+
+}
+
+/*Código CSS da classe modal, que define como a página será apresentada quando a janela modal for exibida*/
+.modal {
+    background-color: #0006;
+    /*define a transparência da página ao fundo*/
+    display: none;
+    /*indica que inicialmente o modal não será apresentado na tela, sendo ativado por meio do código JS*/
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    /*posicionamento fixo*/
+    top: 0;
+    left: 0;
+
+    overflow: auto;
+    z-index: 1;
+}
+
+/*Código CSS da classe modalContent, que define as características da janela modal propriamente dita*/
+.modalContent {
+    background-color: #eee;
+    /*cor de fundo da janela modal é diferente do da página ao fundo, possibilitando um contraste*/
+    margin: auto;
+    padding: 20px;
+    border: 0.5px solid #aaa;
+    box-shadow: 0 0 5px #333;
+
+    width: 50%;
+    position: absolute;
+    /*posicionamento absoluto e centralizado na página, local onde o conteúdo será apresentado*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Código CSS do botão da classe modalContent */
+.modalContent button {
+    width: 100%;
+    background-color: rgb(246, 202, 241);
+    border-radius: 2px;
+    border: 2px solid rgb(215, 26, 196);
+    padding: 5px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    }
+
+/*Código CSS referente às características do botão da classe modalContent quando o mouse passar sobre ele*/
+.modalContent button:hover {
+    background-color: rgb(246, 202, 241);
+    border: 2px solid rgb(215, 26, 196);
+}
+
+#imageNoticias{
+    max-width: 100%;
+    width: 180px;
+    height: 150px;
+    
+    object-fit: scale-down;
+    position: relative;
+}
+
+li{
+    text-align: justify;
+}
+
+.team-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#fotoEvento{
+    height: 350px;
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
